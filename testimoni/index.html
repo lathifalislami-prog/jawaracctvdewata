@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Testimoni | Jawara CCTV Dewata</title>
+<meta name="description" content="Jawara CCTV Dewata: pemasangan dan perawatan CCTV di Bali.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#031526;--cy:#00e5ff;--bl:#1e90ff;--tx:#e8f7ff;--mut:#9ec3d6;--line:rgba(0,229,255,.22);--glass:rgba(6,34,58,.62)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:'Sora',system-ui,sans-serif;color:var(--tx);background:var(--bg);min-height:100vh;padding-bottom:60px;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;z-index:-1;background:
+ radial-gradient(60% 50% at 85% 0%,rgba(0,229,255,.28),transparent 70%),
+ radial-gradient(50% 45% at 0% 100%,rgba(30,144,255,.28),transparent 70%),
+ linear-gradient(rgba(0,229,255,.06) 1px,transparent 1px) 0 0/48px 48px,
+ linear-gradient(90deg,rgba(0,229,255,.06) 1px,transparent 1px) 0 0/48px 48px,
+ linear-gradient(160deg,#031526,#04243d 55%,#02131f)}
+#fx{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+.logo{position:fixed;top:14px;left:18px;z-index:30;display:block;width:200px;aspect-ratio:2.4/1;overflow:hidden;background:#fff;border-radius:16px;box-shadow:0 0 0 1px var(--line),0 8px 30px rgba(0,229,255,.25)}
+.logo img{width:104%;height:100%;object-fit:cover;object-position:center;margin-left:-2%}
+main{position:relative;z-index:2;max-width:1080px;margin:0 auto;padding:150px 22px 20px}
+h1{font-size:clamp(2.1rem,5.5vw,3.9rem);line-height:1.08;letter-spacing:-.02em;max-width:16ch}
+h2{font-size:1.25rem;margin-bottom:6px}
+.lead{color:var(--mut);font-size:1.05rem;line-height:1.7;max-width:60ch;margin:18px 0 28px}
+.btn{display:inline-block;padding:13px 24px;border-radius:999px;font-weight:600;text-decoration:none;color:#021423;background:linear-gradient(90deg,var(--cy),var(--bl));box-shadow:0 0 28px rgba(0,229,255,.45);border:0;font:inherit;font-weight:600;cursor:pointer}
+.btn.o{background:transparent;color:var(--cy);border:1px solid var(--cy);box-shadow:none;margin-left:10px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:34px}
+.card{background:var(--glass);backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:18px;padding:22px}
+.card p,.card li{color:var(--mut);line-height:1.65;font-size:.95rem}
+.card ul{padding-left:18px;margin:10px 0}
+.card.hot{border-color:var(--cy);box-shadow:0 0 34px rgba(0,229,255,.22)}
+.price{font-size:1.5rem;font-weight:700;color:var(--cy);margin:8px 0}
+.ph{aspect-ratio:4/3;border-radius:12px;margin-bottom:14px;background:repeating-linear-gradient(45deg,rgba(0,229,255,.12) 0 12px,rgba(30,144,255,.08) 12px 24px);display:grid;place-items:center;color:var(--cy);font-size:.8rem}
+label{display:block;font-size:.85rem;color:var(--mut);margin:12px 0 6px}
+input,textarea{width:100%;padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:rgba(2,19,31,.7);color:var(--tx);font:inherit}
+.rv{opacity:0;transform:translateY(26px);transition:.7s}.rv.in{opacity:1;transform:none}
+/* DOCK */
+.dock{position:fixed;top:14px;right:18px;height:calc(200px/2.4);z-index:40;display:flex;align-items:center;gap:14px;padding:0 16px;border-radius:22px;background:rgba(4,30,50,.75);backdrop-filter:blur(14px);border:1px solid var(--line);box-shadow:0 10px 40px rgba(0,229,255,.2)}
+.dock a{flex:none}
+.dock a{position:relative;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:rgba(0,229,255,.12);border:1px solid var(--line);color:#bff6ff;text-decoration:none}
+.dock a svg{width:50%;height:50%;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.dock a[aria-current]{background:linear-gradient(135deg,var(--cy),var(--bl));color:#021423}
+.dock a .s{display:none}
+.dock a span{position:absolute;top:calc(100% + 10px);left:50%;transform:translateX(-50%);white-space:nowrap;font-size:.75rem;padding:3px 9px;border-radius:8px;background:#06304d;border:1px solid var(--line);opacity:0;pointer-events:none;transition:.2s}
+.dock a:hover span,.dock a:focus-visible span{opacity:1}
+.dock a:focus-visible{outline:2px solid var(--cy);outline-offset:3px}
+@media(max-width:767px){
+ .logo{width:150px;top:10px;left:12px;border-radius:12px}
+ main{padding-top:110px}
+ .btn.o{margin:10px 0 0}
+ .dock{top:auto;left:0;right:0;bottom:0;height:auto;border-radius:0;border-width:1px 0 0;justify-content:space-around;gap:0;padding:6px 2px calc(6px + env(safe-area-inset-bottom))}
+ .dock a{flex:1;width:auto;height:auto;border-radius:12px;background:none;border:0;flex-direction:column;gap:3px;padding:6px 0;margin:0 1px}
+ .dock a svg{width:22px;height:22px}
+ .dock a[aria-current]{background:rgba(0,229,255,.16);color:var(--cy)}
+ .dock a .f{display:none}.dock a .s{display:block}
+ .dock a span{position:static;transform:none;opacity:1;background:none;border:0;padding:0;font-size:9.5px;line-height:1.1;color:inherit}
+ body{padding-bottom:96px}
+}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+</style></head><body>
+<canvas id="fx"></canvas>
+<a class="logo" href="index.html" aria-label="Jawara CCTV Dewata"><img src="https://res.cloudinary.com/bjod54rp/image/upload/v1794591901/m.png" alt="Jawara CCTV Dewata"></a>
+<main><!-- Tailwind (preflight dimatikan supaya desain awal website tidak berubah) -->
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script>tailwind.config={corePlugins:{preflight:false}}</script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+
+<h1 class="rv">Kata pelanggan</h1>
+<p class="lead rv">Ceritakan pengalaman Anda bersama Jawara CCTV Dewata. Ulasan yang sudah kami setujui akan tampil di bawah.</p>
+
+<style>
+.fc{background:var(--glass);backdrop-filter:blur(12px);border:1px solid var(--line);min-height:440px;position:relative}
+.fc h2{font-size:1.35rem}
+#v-form{transition:opacity .5s,filter .5s,transform .5s}
+.fc:not([data-s="form"]) #v-form{opacity:0;filter:blur(10px);transform:scale(.97);pointer-events:none}
+.ov{position:absolute;inset:0;display:grid;place-content:center;justify-items:center;text-align:center;gap:14px;padding:24px;opacity:0;pointer-events:none;transition:opacity .5s}
+#v-orb{background:radial-gradient(circle at 50% 38%,rgba(0,229,255,.2),rgba(3,21,38,.6) 72%);backdrop-filter:blur(18px) saturate(1.3);box-shadow:inset 0 0 60px rgba(0,229,255,.12)}
+.fc[data-s="think"] #v-orb,.fc[data-s="ok"] #v-ok{opacity:1;pointer-events:auto}
+#orb{width:180px;height:180px;filter:drop-shadow(0 0 22px rgba(0,229,255,.45))}
+.olab{font-weight:600;letter-spacing:.02em;min-height:1.5em}
+.dots i{display:inline-block;width:4px;height:4px;margin-left:3px;border-radius:50%;background:currentColor;animation:dt 1.2s infinite}
+.dots i:nth-child(2){animation-delay:.15s}.dots i:nth-child(3){animation-delay:.3s}
+@keyframes dt{0%,80%,100%{opacity:.25}40%{opacity:1}}
+.chk{width:76px;height:76px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,#34d399,#00e5ff);color:#021423;box-shadow:0 0 40px rgba(52,211,153,.5);transform:scale(.4);transition:transform .6s cubic-bezier(.34,1.56,.64,1)}
+.fc[data-s="ok"] .chk{transform:scale(1)}
+.chk svg{width:38px;height:38px;fill:none;stroke:currentColor;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.stars{display:flex;gap:6px}
+.stars button{background:none;border:0;padding:2px;cursor:pointer;color:rgba(158,195,214,.5);transition:transform .15s,color .15s}
+.stars button svg{width:32px;height:32px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linejoin:round}
+.stars button.on{color:#ffd166}.stars button.on svg{fill:currentColor}
+.stars button:hover{transform:scale(1.15)}
+.stars button:focus-visible{outline:2px solid var(--cy);outline-offset:2px;border-radius:6px}
+#err{color:#ff8fa3;font-size:.9rem;min-height:1.3em;margin-top:10px}
+.car{background:rgba(6,34,58,.35);border:1px solid var(--line)}
+.tcard{position:absolute;left:50%;top:50%;cursor:pointer;padding:28px;border:2px solid var(--line);background:rgba(6,34,58,.92);color:var(--tx);transition:all .5s ease-in-out;z-index:0;clip-path:polygon(50px 0%,calc(100% - 50px) 0%,100% 50px,100% 100%,calc(100% - 50px) 100%,50px 100%,0 100%,0 0);overflow:hidden}
+.tcard:hover{border-color:var(--cy)}
+.tcard.on{z-index:10;background:linear-gradient(135deg,#00e5ff,#1e90ff);color:#021423;border-color:var(--cy);box-shadow:0 8px 0 4px rgba(0,229,255,.28)}
+.tcard .diag{position:absolute;right:-2px;top:48px;width:70.7px;height:2px;background:var(--line);transform:rotate(45deg);transform-origin:top right}
+.tcard.on .diag{background:rgba(2,20,35,.35)}
+.tcard .av{width:48px;height:56px;display:grid;place-items:center;font-weight:700;font-size:1.4rem;background:rgba(0,229,255,.15);color:var(--cy);margin-bottom:12px;box-shadow:3px 3px 0 rgba(0,0,0,.3)}
+.tcard.on .av{background:#021423;color:var(--cy)}
+.tcard .st{color:#ffd166;letter-spacing:2px;font-size:1rem;margin-bottom:8px}
+.tcard.on .st{color:#021423}
+.tcard .q{font-size:1.02rem;font-weight:500;line-height:1.5;display:-webkit-box;-webkit-line-clamp:6;-webkit-box-orient:vertical;overflow:hidden}
+.tcard .by{position:absolute;left:28px;right:28px;bottom:26px;font-size:.85rem;font-style:italic;opacity:.8;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cnav{width:52px;height:52px;display:grid;place-items:center;background:rgba(3,21,38,.85);border:2px solid var(--line);color:var(--cy);cursor:pointer;transition:.2s}
+.cnav:hover{background:var(--cy);color:#021423}
+.cnav:focus-visible{outline:2px solid var(--cy);outline-offset:2px}
+.cnav svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+@media(max-width:639px){.stars button svg{width:36px;height:36px}}
+</style>
+
+<!-- ================= BAGIAN 1: FORM ULASAN ================= -->
+<section class="mx-auto mt-8 max-w-2xl">
+ <div id="fc" class="fc overflow-hidden rounded-3xl p-6 sm:p-8" data-s="form">
+  <div id="v-form">
+   <h2>Tulis ulasan Anda</h2>
+   <form id="rf" novalidate class="mt-2">
+    <label for="f-name">Nama / Nama Perusahaan</label>
+    <input id="f-name" name="name" type="text" maxlength="80" autocomplete="name" placeholder="Contoh: Budi Santoso / CV Maju Jaya">
+    <label id="rl">Rating</label>
+    <div class="stars" id="stars" role="radiogroup" aria-labelledby="rl"></div>
+    <label for="f-msg">Pesan ulasan</label>
+    <textarea id="f-msg" name="message" rows="4" maxlength="500" placeholder="Contoh: Pemasangan rapi, tim ramah, dan gambar kamera jernih sampai malam hari."></textarea>
+    <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+    <p id="err" role="alert"></p>
+    <button class="btn mt-2" type="submit" id="send">Kirim Ulasan</button>
+   </form>
+  </div>
+  <div id="v-orb" class="ov" aria-live="polite">
+   <canvas id="orb" aria-hidden="true"></canvas>
+   <div class="olab" id="olab">Membaca ulasan</div>
+  </div>
+  <div id="v-ok" class="ov">
+   <div class="chk"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
+   <h2 style="max-width:22ch">Terima kasih untuk ulasannya, terima kasih sudah menggunakan jasa kami!</h2>
+   <p style="color:var(--mut);font-size:.9rem">Ulasan Anda akan tampil setelah kami tinjau.</p>
+   <button class="btn o" type="button" id="again" style="margin-left:0">Tulis ulasan lain</button>
+  </div>
+ </div>
+</section>
+
+<!-- ================= BAGIAN 2: CAROUSEL TESTIMONI ================= -->
+<section class="mt-16">
+ <h2 class="text-2xl font-bold">Ulasan pelanggan</h2>
+ <p class="lead" style="margin-top:8px">Geser dengan tombol panah, klik kartu, atau swipe di HP.</p>
+ <div id="car" class="car relative overflow-hidden rounded-3xl" style="height:560px;touch-action:pan-y">
+  <div id="stage"></div>
+  <div id="cmsg" class="absolute inset-0 grid place-content-center px-6 text-center" style="color:var(--mut)">Memuat ulasan…</div>
+  <div id="cnav" class="absolute bottom-4 left-1/2 hidden -translate-x-1/2 gap-2 z-20">
+   <button class="cnav" id="cprev" aria-label="Ulasan sebelumnya"><svg viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg></button>
+   <button class="cnav" id="cnext" aria-label="Ulasan berikutnya"><svg viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg></button>
+  </div>
+ </div>
+</section>
+
+<script type="module">
+/* ============================================================
+   KONFIGURASI SUPABASE  —  ISI DI SINI
+   Supabase Dashboard > Project Settings > API
+   - SUPABASE_URL      : Project URL
+   - SUPABASE_ANON_KEY : anon public key (aman di frontend karena dilindungi RLS)
+   Jalankan juga file supabase-setup.sql di SQL Editor Supabase.
+   ============================================================ */
+const SUPABASE_URL      = "https://YOUR-PROJECT.supabase.co";
+const SUPABASE_ANON_KEY = "YOUR-ANON-KEY";
+const TABLE = "testimonials";
+const configured = !SUPABASE_URL.includes("YOUR-PROJECT") && !SUPABASE_ANON_KEY.includes("YOUR-ANON");
+const sb = configured ? window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY) : null;
+const $ = id => document.getElementById(id);
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* ---------------- Orb (dotted sphere, glow) ---------------- */
+const dots = [];
+for (let k = 0; k < 16; k++) {
+  const y = 1 - ((k + .5) / 16) * 2, r = Math.sqrt(1 - y * y), m = Math.max(4, Math.round(30 * r));
+  for (let j = 0; j < m; j++) { const a = j / m * Math.PI * 2 + k * .35; dots.push([Math.cos(a) * r, y, Math.sin(a) * r]); }
+}
+const cv = $('orb'), cx = cv.getContext('2d'), dpr = Math.min(2, devicePixelRatio || 1);
+cv.width = cv.height = Math.round(180 * dpr);
+const orb = { g: 0, t: 0, rot: 0, raf: 0, last: 0,
+  start() { this.g = 0; this.t = 0; if (!this.raf) { this.last = performance.now(); this.raf = requestAnimationFrame(f => this.frame(f)); } },
+  stop() { cancelAnimationFrame(this.raf); this.raf = 0; cx.clearRect(0, 0, cv.width, cv.height); },
+  frame(now) {
+    const dt = reduce ? 0 : Math.min(.05, (now - this.last) / 1000); this.last = now;
+    this.t += dt; this.rot += dt * .9;
+    cx.setTransform(dpr, 0, 0, dpr, 0, 0); cx.clearRect(0, 0, 180, 180);
+    const cy = Math.cos(this.rot), sy = Math.sin(this.rot), cp = Math.cos(.35), sp = Math.sin(.35), N = dots.length;
+    const h1 = (this.t * 300) % N, h2 = (this.t * 480 + N / 2) % N;
+    for (let n = 0; n < N; n++) {
+      const [x, y, z] = dots[n];
+      const x1 = x * cy + z * sy, z1 = -x * sy + z * cy, y2 = y * cp - z1 * sp, z2 = y * sp + z1 * cp;
+      const f = 2.8 / (2.8 - z2), depth = (z2 + 1) / 2;
+      let d1 = Math.abs(n - h1); if (d1 > N - d1) d1 = N - d1;
+      let d2 = Math.abs(n - h2); if (d2 > N - d2) d2 = N - d2;
+      const v = Math.max(Math.max(0, 1 - d1 / 16) ** 2, Math.max(0, 1 - d2 / 22) ** 2);
+      const u = (1 - y) / 2, gg = Math.min(1, Math.max(0, (this.g * 1.4 - u) / .4));
+      const r = Math.round(0 + 52 * gg), g = Math.round(229 - 18 * gg), b = Math.round(255 - 102 * gg);
+      const a = Math.min(1, .12 + .4 * depth * depth + .8 * v + gg * .5);
+      cx.fillStyle = `rgba(${r},${g},${b},${a.toFixed(3)})`;
+      cx.beginPath(); cx.arc(90 + x1 * 64 * f, 90 - y2 * 64 * f, 1.2 * (.45 + .75 * depth) * f + .9 * v + gg * .25, 0, 6.2832); cx.fill();
+    }
+    this.raf = requestAnimationFrame(f => this.frame(f));
+  },
+  async sweep() { const t0 = performance.now(); while (this.g < 1) { await sleep(16); this.g = Math.min(1, (performance.now() - t0) / 700); } }
+};
+
+/* ---------------- Form ---------------- */
+const fc = $('fc'), form = $('rf'), err = $('err'), olab = $('olab');
+let rating = 0;
+const STAR = '<svg viewBox="0 0 24 24"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>';
+const stars = $('stars');
+for (let i = 1; i <= 5; i++) {
+  const b = document.createElement('button');
+  b.type = 'button'; b.setAttribute('role', 'radio'); b.setAttribute('aria-checked', 'false'); b.setAttribute('aria-label', i + ' bintang'); b.innerHTML = STAR;
+  b.onclick = () => setRating(i); stars.appendChild(b);
+}
+function setRating(v) { rating = v; [...stars.children].forEach((b, i) => { b.classList.toggle('on', i < v); b.setAttribute('aria-checked', String(i + 1 === v)); }); }
+function setState(s) { fc.dataset.s = s; $('v-form').toggleAttribute('inert', s !== 'form'); }
+const showErr = m => { err.textContent = m; };
+const LABELS = ['Membaca ulasan', 'Menyimpan', 'Mengirim', 'Hampir selesai'];
+const dotsHTML = '<span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>';
+
+form.addEventListener('submit', async e => {
+  e.preventDefault(); showErr('');
+  const name = form.elements.name.value.trim(), message = form.elements.message.value.trim();
+  if (name.length < 2) return showErr('Isi nama atau nama perusahaan (minimal 2 huruf).');
+  if (!rating) return showErr('Pilih rating bintang 1 sampai 5.');
+  if (message.length < 10) return showErr('Pesan ulasan minimal 10 karakter.');
+  if (!configured) return showErr('Supabase belum dikonfigurasi. Isi SUPABASE_URL dan SUPABASE_ANON_KEY di kode.');
+  try { if (Date.now() - Number(localStorage.getItem('jcd_last') || 0) < 30000) return showErr('Mohon tunggu sebentar sebelum mengirim ulasan lagi.'); } catch (_) {}
+
+  setState('think'); orb.start();
+  let i = 0; olab.innerHTML = LABELS[0] + dotsHTML;
+  const iv = setInterval(() => { i = (i + 1) % LABELS.length; olab.innerHTML = LABELS[i] + dotsHTML; }, 1000);
+  const t0 = Date.now(); let failed = null;
+  try {
+    if (!form.elements.website.value) { /* honeypot kosong = manusia */
+      const { error } = await sb.from(TABLE).insert({ name, rating, message, is_approved: false });
+      if (error) failed = error;
+    }
+  } catch (x) { failed = x; }
+  await sleep(Math.max(0, 2800 - (Date.now() - t0)));
+  clearInterval(iv);
+  if (failed) { console.error(failed); orb.stop(); setState('form'); showErr('Maaf, ulasan gagal dikirim. Coba lagi sebentar lagi.'); return; }
+  olab.textContent = 'Selesai'; await orb.sweep(); await sleep(500);
+  try { localStorage.setItem('jcd_last', String(Date.now())); } catch (_) {}
+  setState('ok'); await sleep(600); orb.stop(); form.reset(); setRating(0);
+});
+$('again').onclick = () => setState('form');
+setState('form');
+
+/* ---------------- Carousel (desain 21st.dev: kartu zig-zag) ---------------- */
+const stage = $('stage'), cmsg = $('cmsg'), cnav = $('cnav');
+let order = [], size = 365;
+const mqSize = () => { size = matchMedia('(min-width:640px)').matches ? 365 : 290; layout(); };
+function buildCard(t) {
+  const el = document.createElement('div'); el.className = 'tcard';
+  el.innerHTML = '<i class="diag"></i><div class="av"></div><div class="st"></div><h3 class="q"></h3><p class="by"></p>';
+  el.querySelector('.av').textContent = (t.name || '?').trim().charAt(0).toUpperCase();
+  el.querySelector('.st').textContent = '★'.repeat(t.rating) + '☆'.repeat(5 - t.rating);
+  el.querySelector('.q').textContent = '“' + t.message + '”';
+  el.querySelector('.by').textContent = '- ' + t.name;
+  el.onclick = () => { if (!suppress) move(Number(el.dataset.pos)); };
+  return el;
+}
+function layout(jump = []) {
+  const n = order.length, mid = Math.floor(n / 2);
+  order.forEach((el, i) => {
+    const pos = i - mid, c = pos === 0;
+    el.dataset.pos = pos; el.classList.toggle('on', c);
+    el.style.width = el.style.height = size + 'px';
+    if (jump.includes(el)) el.style.transition = 'none';
+    el.style.transform = `translate(-50%,-50%) translateX(${(size / 1.5) * pos}px) translateY(${c ? -65 : pos % 2 ? 15 : -15}px) rotate(${c ? 0 : pos % 2 ? 2.5 : -2.5}deg)`;
+  });
+  if (jump.length) { void stage.offsetWidth; jump.forEach(el => el.style.transition = ''); }
+}
+function move(steps) {
+  if (order.length < 2 || !steps) return;
+  const jumped = [];
+  if (steps > 0) for (let k = 0; k < steps; k++) { const el = order.shift(); order.push(el); jumped.push(el); }
+  else for (let k = steps; k < 0; k++) { const el = order.pop(); order.unshift(el); jumped.push(el); }
+  layout(jumped);
+}
+let suppress = false, sx = 0;
+const car = $('car');
+car.addEventListener('pointerdown', e => { sx = e.clientX; suppress = false; });
+car.addEventListener('pointerup', e => { const dx = e.clientX - sx; if (Math.abs(dx) > 50) { suppress = true; move(dx < 0 ? 1 : -1); setTimeout(() => suppress = false, 50); } });
+$('cprev').onclick = () => move(-1); $('cnext').onclick = () => move(1);
+addEventListener('resize', mqSize);
+
+async function loadReviews() {
+  if (!configured) { cmsg.textContent = 'Supabase belum dikonfigurasi. Isi SUPABASE_URL dan SUPABASE_ANON_KEY di kode.'; return; }
+  try {
+    const { data, error } = await sb.from(TABLE).select('id,name,rating,message,created_at')
+      .eq('is_approved', true).order('created_at', { ascending: false }).limit(20);
+    if (error) throw error;
+    if (!data.length) { cmsg.textContent = 'Belum ada ulasan yang ditampilkan. Jadilah yang pertama!'; return; }
+    cmsg.style.display = 'none';
+    order = data.map(buildCard); order.forEach(el => stage.appendChild(el));
+    cnav.classList.remove('hidden'); cnav.classList.add('flex');
+    mqSize(); layout(order);
+  } catch (x) { console.error(x); cmsg.textContent = 'Ulasan belum bisa dimuat. Silakan coba lagi nanti.'; }
+}
+loadReviews();
+</script>
+</main>
+<nav class="dock" role="toolbar" aria-label="Menu utama"><a href="index.html" aria-label="Beranda"><svg viewBox="0 0 24 24"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg><span><b class="f" style="font-weight:400">Beranda</b><b class="s" style="font-weight:400">Beranda</b></span></a><a href="paket-cctv.html" aria-label="Paket CCTV"><svg viewBox="0 0 24 24"><path d="m22 8-6 4 6 4V8Z"/><rect x="2" y="6" width="14" height="12" rx="2"/></svg><span><b class="f" style="font-weight:400">Paket CCTV</b><b class="s" style="font-weight:400">Paket</b></span></a><a href="layanan.html" aria-label="Layanan"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94z"/></svg><span><b class="f" style="font-weight:400">Layanan</b><b class="s" style="font-weight:400">Layanan</b></span></a><a href="jejak-instalasi.html" aria-label="Jejak Instalasi"><svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><span><b class="f" style="font-weight:400">Jejak Instalasi</b><b class="s" style="font-weight:400">Jejak</b></span></a><a href="tentang-kami.html" aria-label="Tentang Kami"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg><span><b class="f" style="font-weight:400">Tentang Kami</b><b class="s" style="font-weight:400">Tentang</b></span></a><a href="testimoni.html" aria-label="Testimoni" aria-current="page"><svg viewBox="0 0 24 24"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><span><b class="f" style="font-weight:400">Testimoni</b><b class="s" style="font-weight:400">Testimoni</b></span></a><a href="kontak.html" aria-label="Kontak"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span><b class="f" style="font-weight:400">Kontak</b><b class="s" style="font-weight:400">Kontak</b></span></a></nav>
+<script type="module">
+const LOGO='https://res.cloudinary.com/bjod54rp/image/upload/v1794591901/m.png';
+// ===== DOCK (magnifikasi macOS di laptop, tab bar ala Instagram di HP) =====
+const dock=document.querySelector('.dock'),its=[...dock.querySelectorAll('a')];
+const desk=matchMedia('(min-width:768px)');
+const BASE=44,MAG=80,DIST=150;let mx=Infinity,run=false;
+const W=its.map(()=>BASE),T=its.map(()=>BASE);
+function tick(){let moving=false;
+ its.forEach((a,i)=>{const r=a.getBoundingClientRect();
+  const d=Math.abs(mx-(r.left+r.width/2));
+  T[i]=(desk.matches&&d<DIST)?BASE+(MAG-BASE)*Math.pow(Math.cos(d/DIST*Math.PI/2),2):BASE;
+  W[i]+=(T[i]-W[i])*.22;if(Math.abs(T[i]-W[i])>.3)moving=true;
+  a.style.width=a.style.height=desk.matches?W[i]+'px':'';});
+ if(moving||mx!==Infinity)requestAnimationFrame(tick);else run=false;}
+const kick=()=>{if(!run){run=true;requestAnimationFrame(tick);}};
+dock.addEventListener('mousemove',e=>{mx=e.pageX-scrollX;kick()});
+dock.addEventListener('mouseleave',()=>{mx=Infinity;kick()});
+// ===== ANIMASI KURSOR TUBES (tanpa background) =====
+const cv=document.getElementById('fx');let app=null;
+setTimeout(()=>{import('https://cdn.jsdelivr.net/npm/threejs-components@0.0.19/build/cursors/tubes1.min.js').then(m=>{
+ app=m.default(cv,{tubes:{colors:['#00e5ff','#1e90ff','#7c4dff'],lights:{intensity:200,colors:['#21d4fd','#00e5ff','#2979ff','#ffffff']}}});
+}).catch(e=>console.error('Tubes gagal dimuat',e))},100);
+// ===== HP: kursor mengikuti gerakan scroll =====
+function fake(x,y){['pointermove','mousemove'].forEach(t=>{
+ const E=t==='pointermove'?PointerEvent:MouseEvent;
+ cv.dispatchEvent(new E(t,{clientX:x,clientY:y,bubbles:true,pointerType:'touch'}));});}
+let ly=scrollY;
+addEventListener('scroll',()=>{if(desk.matches)return;
+ const h=document.documentElement.scrollHeight-innerHeight||1,p=scrollY/h,dy=scrollY-ly;ly=scrollY;
+ fake(innerWidth*(.5+.38*Math.sin(scrollY/110)),innerHeight*(.15+.7*p)+dy*.4);},{passive:true});
+// ===== Reveal saat scroll =====
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+// ===== Form kontak -> WhatsApp =====
+const f=document.getElementById('wa');
+if(f)f.addEventListener('submit',e=>{e.preventDefault();
+ const v=n=>f.elements[n].value.trim();
+ open('https://wa.me/6281234567890?text='+encodeURIComponent('Halo Jawara CCTV Dewata, saya '+v('nama')+'. '+v('pesan')),'_blank')});
+</script></body></html>
