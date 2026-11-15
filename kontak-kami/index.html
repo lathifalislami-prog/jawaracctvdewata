@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Kontak | Jawara CCTV Dewata</title>
+<meta name="description" content="Jawara CCTV Dewata: pemasangan dan perawatan CCTV di Bali.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#031526;--cy:#00e5ff;--bl:#1e90ff;--tx:#e8f7ff;--mut:#9ec3d6;--line:rgba(0,229,255,.22);--glass:rgba(6,34,58,.62)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:'Sora',system-ui,sans-serif;color:var(--tx);background:var(--bg);min-height:100vh;padding-bottom:60px;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;z-index:-1;background:
+ radial-gradient(60% 50% at 85% 0%,rgba(0,229,255,.28),transparent 70%),
+ radial-gradient(50% 45% at 0% 100%,rgba(30,144,255,.28),transparent 70%),
+ linear-gradient(rgba(0,229,255,.06) 1px,transparent 1px) 0 0/48px 48px,
+ linear-gradient(90deg,rgba(0,229,255,.06) 1px,transparent 1px) 0 0/48px 48px,
+ linear-gradient(160deg,#031526,#04243d 55%,#02131f)}
+#fx{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+.logo{position:fixed;top:14px;left:18px;z-index:30;display:block;width:200px;aspect-ratio:2.4/1;overflow:hidden;background:#fff;border-radius:16px;box-shadow:0 0 0 1px var(--line),0 8px 30px rgba(0,229,255,.25)}
+.logo img{width:104%;height:100%;object-fit:cover;object-position:center;margin-left:-2%}
+main{position:relative;z-index:2;max-width:1080px;margin:0 auto;padding:150px 22px 20px}
+h1{font-size:clamp(2.1rem,5.5vw,3.9rem);line-height:1.08;letter-spacing:-.02em;max-width:16ch}
+h2{font-size:1.25rem;margin-bottom:6px}
+.lead{color:var(--mut);font-size:1.05rem;line-height:1.7;max-width:60ch;margin:18px 0 28px}
+.btn{display:inline-block;padding:13px 24px;border-radius:999px;font-weight:600;text-decoration:none;color:#021423;background:linear-gradient(90deg,var(--cy),var(--bl));box-shadow:0 0 28px rgba(0,229,255,.45);border:0;font:inherit;font-weight:600;cursor:pointer}
+.btn.o{background:transparent;color:var(--cy);border:1px solid var(--cy);box-shadow:none;margin-left:10px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:34px}
+.card{background:var(--glass);backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:18px;padding:22px}
+.card p,.card li{color:var(--mut);line-height:1.65;font-size:.95rem}
+.card ul{padding-left:18px;margin:10px 0}
+.card.hot{border-color:var(--cy);box-shadow:0 0 34px rgba(0,229,255,.22)}
+.price{font-size:1.5rem;font-weight:700;color:var(--cy);margin:8px 0}
+.ph{aspect-ratio:4/3;border-radius:12px;margin-bottom:14px;background:repeating-linear-gradient(45deg,rgba(0,229,255,.12) 0 12px,rgba(30,144,255,.08) 12px 24px);display:grid;place-items:center;color:var(--cy);font-size:.8rem}
+label{display:block;font-size:.85rem;color:var(--mut);margin:12px 0 6px}
+input,textarea{width:100%;padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:rgba(2,19,31,.7);color:var(--tx);font:inherit}
+.rv{opacity:0;transform:translateY(26px);transition:.7s}.rv.in{opacity:1;transform:none}
+/* DOCK */
+.dock{position:fixed;top:14px;right:18px;height:calc(200px/2.4);z-index:40;display:flex;align-items:center;gap:14px;padding:0 16px;border-radius:22px;background:rgba(4,30,50,.75);backdrop-filter:blur(14px);border:1px solid var(--line);box-shadow:0 10px 40px rgba(0,229,255,.2)}
+.dock a{flex:none}
+.dock a{position:relative;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:rgba(0,229,255,.12);border:1px solid var(--line);color:#bff6ff;text-decoration:none}
+.dock a svg{width:50%;height:50%;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.dock a[aria-current]{background:linear-gradient(135deg,var(--cy),var(--bl));color:#021423}
+.dock a .s{display:none}
+.dock a span{position:absolute;top:calc(100% + 10px);left:50%;transform:translateX(-50%);white-space:nowrap;font-size:.75rem;padding:3px 9px;border-radius:8px;background:#06304d;border:1px solid var(--line);opacity:0;pointer-events:none;transition:.2s}
+.dock a:hover span,.dock a:focus-visible span{opacity:1}
+.dock a:focus-visible{outline:2px solid var(--cy);outline-offset:3px}
+@media(max-width:767px){
+ .logo{width:150px;top:10px;left:12px;border-radius:12px}
+ main{padding-top:110px}
+ .btn.o{margin:10px 0 0}
+ .dock{top:auto;left:0;right:0;bottom:0;height:auto;border-radius:0;border-width:1px 0 0;justify-content:space-around;gap:0;padding:6px 2px calc(6px + env(safe-area-inset-bottom))}
+ .dock a{flex:1;width:auto;height:auto;border-radius:12px;background:none;border:0;flex-direction:column;gap:3px;padding:6px 0;margin:0 1px}
+ .dock a svg{width:22px;height:22px}
+ .dock a[aria-current]{background:rgba(0,229,255,.16);color:var(--cy)}
+ .dock a .f{display:none}.dock a .s{display:block}
+ .dock a span{position:static;transform:none;opacity:1;background:none;border:0;padding:0;font-size:9.5px;line-height:1.1;color:inherit}
+ body{padding-bottom:96px}
+}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+</style></head><body>
+<canvas id="fx"></canvas>
+<a class="logo" href="index.html" aria-label="Jawara CCTV Dewata"><img src="https://res.cloudinary.com/bjod54rp/image/upload/v1794591901/m.png" alt="Jawara CCTV Dewata"></a>
+<main><h1 class="rv">Hubungi Jawara CCTV Dewata</h1>
+<p class="lead rv">Ceritakan kebutuhan Anda, kami balas lewat WhatsApp.</p>
+<div class="grid"><div class="card rv"><h2>Kirim pesan</h2><form id="wa"><label for="n">Nama</label><input id="n" name="nama" required><label for="p">Kebutuhan</label><textarea id="p" name="pesan" rows="4" required placeholder="Contoh: pasang 4 kamera di rumah, daerah Denpasar"></textarea><br><br><button class="btn" type="submit">Kirim lewat WhatsApp</button></form></div>
+<div class="card rv "><h2>Info</h2><p>Area layanan: Bali (Denpasar dan sekitarnya).</p><p>WhatsApp: +6281234567890</p></div></div></main>
+<nav class="dock" role="toolbar" aria-label="Menu utama"><a href="index.html" aria-label="Beranda"><svg viewBox="0 0 24 24"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg><span><b class="f" style="font-weight:400">Beranda</b><b class="s" style="font-weight:400">Beranda</b></span></a><a href="paket-cctv.html" aria-label="Paket CCTV"><svg viewBox="0 0 24 24"><path d="m22 8-6 4 6 4V8Z"/><rect x="2" y="6" width="14" height="12" rx="2"/></svg><span><b class="f" style="font-weight:400">Paket CCTV</b><b class="s" style="font-weight:400">Paket</b></span></a><a href="layanan.html" aria-label="Layanan"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94z"/></svg><span><b class="f" style="font-weight:400">Layanan</b><b class="s" style="font-weight:400">Layanan</b></span></a><a href="jejak-instalasi.html" aria-label="Jejak Instalasi"><svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><span><b class="f" style="font-weight:400">Jejak Instalasi</b><b class="s" style="font-weight:400">Jejak</b></span></a><a href="tentang-kami.html" aria-label="Tentang Kami"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg><span><b class="f" style="font-weight:400">Tentang Kami</b><b class="s" style="font-weight:400">Tentang</b></span></a><a href="testimoni.html" aria-label="Testimoni"><svg viewBox="0 0 24 24"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><span><b class="f" style="font-weight:400">Testimoni</b><b class="s" style="font-weight:400">Testimoni</b></span></a><a href="kontak.html" aria-label="Kontak" aria-current="page"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span><b class="f" style="font-weight:400">Kontak</b><b class="s" style="font-weight:400">Kontak</b></span></a></nav>
+<script type="module">
+const LOGO='https://res.cloudinary.com/bjod54rp/image/upload/v1794591901/m.png';
+// ===== DOCK (magnifikasi macOS di laptop, tab bar ala Instagram di HP) =====
+const dock=document.querySelector('.dock'),its=[...dock.querySelectorAll('a')];
+const desk=matchMedia('(min-width:768px)');
+const BASE=44,MAG=80,DIST=150;let mx=Infinity,run=false;
+const W=its.map(()=>BASE),T=its.map(()=>BASE);
+function tick(){let moving=false;
+ its.forEach((a,i)=>{const r=a.getBoundingClientRect();
+  const d=Math.abs(mx-(r.left+r.width/2));
+  T[i]=(desk.matches&&d<DIST)?BASE+(MAG-BASE)*Math.pow(Math.cos(d/DIST*Math.PI/2),2):BASE;
+  W[i]+=(T[i]-W[i])*.22;if(Math.abs(T[i]-W[i])>.3)moving=true;
+  a.style.width=a.style.height=desk.matches?W[i]+'px':'';});
+ if(moving||mx!==Infinity)requestAnimationFrame(tick);else run=false;}
+const kick=()=>{if(!run){run=true;requestAnimationFrame(tick);}};
+dock.addEventListener('mousemove',e=>{mx=e.pageX-scrollX;kick()});
+dock.addEventListener('mouseleave',()=>{mx=Infinity;kick()});
+// ===== ANIMASI KURSOR TUBES (tanpa background) =====
+const cv=document.getElementById('fx');let app=null;
+setTimeout(()=>{import('https://cdn.jsdelivr.net/npm/threejs-components@0.0.19/build/cursors/tubes1.min.js').then(m=>{
+ app=m.default(cv,{tubes:{colors:['#00e5ff','#1e90ff','#7c4dff'],lights:{intensity:200,colors:['#21d4fd','#00e5ff','#2979ff','#ffffff']}}});
+}).catch(e=>console.error('Tubes gagal dimuat',e))},100);
+// ===== HP: kursor mengikuti gerakan scroll =====
+function fake(x,y){['pointermove','mousemove'].forEach(t=>{
+ const E=t==='pointermove'?PointerEvent:MouseEvent;
+ cv.dispatchEvent(new E(t,{clientX:x,clientY:y,bubbles:true,pointerType:'touch'}));});}
+let ly=scrollY;
+addEventListener('scroll',()=>{if(desk.matches)return;
+ const h=document.documentElement.scrollHeight-innerHeight||1,p=scrollY/h,dy=scrollY-ly;ly=scrollY;
+ fake(innerWidth*(.5+.38*Math.sin(scrollY/110)),innerHeight*(.15+.7*p)+dy*.4);},{passive:true});
+// ===== Reveal saat scroll =====
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+// ===== Form kontak -> WhatsApp =====
+const f=document.getElementById('wa');
+if(f)f.addEventListener('submit',e=>{e.preventDefault();
+ const v=n=>f.elements[n].value.trim();
+ open('https://wa.me/6281234567890?text='+encodeURIComponent('Halo Jawara CCTV Dewata, saya '+v('nama')+'. '+v('pesan')),'_blank')});
+</script></body></html>
